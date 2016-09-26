@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="ticket_details" max_length="40" name="x_72724_trainbook_ticket_details" type="collection">
+        <element choice="1" label="Destination" mandatory="true" max_length="40" name="destination" type="choice">
+            <choice>
+                <element label="C" sequence="0" value="1"/>
+                <element label="D" sequence="1" value="2"/>
+            </choice>
+        </element>
+        <element label="Fare" max_length="40" name="fare" type="integer"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="1" label="Quantity" mandatory="true" max_length="40" name="quantity" type="choice">
+            <choice>
+                <element label="1" sequence="0" value="1"/>
+                <element label="2" sequence="1" value="2"/>
+                <element label="3" sequence="2" value="3"/>
+                <element label="4" sequence="3" value="4"/>
+            </choice>
+        </element>
+        <element label="Refer name" mandatory="true" max_length="32" name="refer_name" reference="x_72724_trainbook_registration" type="reference"/>
+        <element choice="1" label="Source" mandatory="true" max_length="40" name="source" type="choice">
+            <choice>
+                <element label="A" sequence="0" value="1"/>
+                <element label="B" sequence="1" value="2"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="refer_name"/>
+        </index>
+    </element>
+</database>

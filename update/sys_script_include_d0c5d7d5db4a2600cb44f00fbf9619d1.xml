@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_72724_trainbook.price</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>price</name>
+        <script><![CDATA[var price = Class.create();
+price.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	get_price : function() {
+		var c = this.getParameter('sysparm_src');
+		var d=this.getParameter('sysparm_dest');
+		var LocDataArr = this._getLocationForA(c,d);
+		return LocDataArr;
+	},
+	
+	_getLocationForA: function(c,d)
+	{
+		var ag = new GlideRecord('x_72724_trainbook_fare_table');
+		ag.addQuery('source', c);
+		//ag.addQuery('destination',d);
+		ag.query();
+		//gs.addInfoMessage(ag.getRowCount());
+		if (ag.next()) {
+			p = ag.fare;
+		}
+		return p;
+	}
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2016-09-23 08:44:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d0c5d7d5db4a2600cb44f00fbf9619d1</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>price</sys_name>
+        <sys_package display_value="trainbook" source="x_72724_trainbook">4b4ca789db462600cb44f00fbf961932</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="trainbook">4b4ca789db462600cb44f00fbf961932</sys_scope>
+        <sys_update_name>sys_script_include_d0c5d7d5db4a2600cb44f00fbf9619d1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2016-09-23 09:09:58</sys_updated_on>
+    </sys_script_include>
+</record_update>

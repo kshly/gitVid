@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="952f48d5db862600cb44f00fbf9619f5" sys_domain="global" table="x_72724_trainbook_ticket_details" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-09-22 18:15:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1d2f48d5db862600cb44f00fbf9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_72724_trainbook_ticket_details" name="x_72724_trainbook_ticket_details" sys_domain="global" view="Default view">952f48d5db862600cb44f00fbf9619f5</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_72724_trainbook_ticket_details" sys_domain="global" view="Default view">193daf0ddb462600cb44f00fbf9619c4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-09-22 18:15:42</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_72724_trainbook_ticket_details</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2016-09-22 18:15:42</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>952f48d5db862600cb44f00fbf9619f5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_72724_trainbook_ticket_details</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="trainbook" source="x_72724_trainbook">4b4ca789db462600cb44f00fbf961932</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="trainbook">4b4ca789db462600cb44f00fbf961932</sys_scope>
+            <sys_update_name>sys_ui_form_sections_952f48d5db862600cb44f00fbf9619f5</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2016-09-22 18:15:42</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

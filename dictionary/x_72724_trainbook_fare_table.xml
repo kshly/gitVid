@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="fare_table1" max_length="40" name="x_72724_trainbook_fare_table" type="collection">
+        <element label="Destination" max_length="40" name="destination" type="string"/>
+        <element label="fare" max_length="40" name="fare" type="integer"/>
+        <element label="source" max_length="40" name="source" type="string"/>
+    </element>
+</database>

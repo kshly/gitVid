@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="login" max_length="40" name="x_72724_trainbook_login" type="collection">
+        <element label="password" max_length="255" name="password" type="password2"/>
+        <element label="username" max_length="32" name="username" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="username"/>
+        </index>
+    </element>
+</database>
